@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <nav class="p-6 flex justify-between items-center bg-gray-800">
+        <h1 class="text-2xl font-bold">Priyanshu Turakhia</h1>
+        <ul class="flex space-x-6">
+            <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+            <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
+            <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section Background Wrapper -->
+    <div class="h-screen bg-cover bg-center relative" style="background-image: url('iamge/bgimage2.jpeg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <!-- Hero Section -->
+        <section class="h-screen flex flex-col items-center justify-center text-center px-6 relative z-10">
+        <img src="iamge/profile pic.jpg" class="w-48 h-48 rounded-full mb-6" alt="Profile Image">
+        <h2 class="text-4xl font-bold">Hi, I'm a Data Anayst.</h2>
+        <p class="text-lg mt-4">I specialize in turning raw data into actionable insights and Passionate about data-driven decision-making.</p>
+        <a href="#projects" class="mt-6 px-6 py-2 bg-yellow-500 text-gray-900 font-bold rounded-lg hover:bg-yellow-400">View My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 text-center">
+        <h2 class="text-3xl font-bold">About Me</h2>
+        <p class="mt-4 max-w-2xl mx-auto">I am a passionate Data Anayst skilled in Python(pandas,Seaborn,Matplotlib,Numpy),Tablue and PowerBI.Mining valuable knowledge from raw Data.</p>
+        <p class="mt-2"><a href="https://www.linkedin.com/in/priyanshu-turakhia-b79a6a303?" class="text-yellow-400">linkedin</a></p>
+        <p class="mt-2"><a href="https://github.com/priyanshu13-IT" class="text-yellow-400">Github</a></p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id=    "projects" class="py-16 text-center">
+        <h2 class="text-3xl font-bold">Projects</h2>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <img src="iamge/Netfilx.png" class="w-full rounded-md" alt="Project 1">
+                <h3 class="mt-4 text-xl font-semibold">Netflix Investigation</h3>
+                <p class="mt-2">This project explores Netflix's vast dataset to uncover trends in content production, popularity, and user preferences. Using Python and libraries like Pandas, Matplotlib, and Seaborn, we performed data cleaning, visualization, and exploratory analysis.</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <img src="iamge/Stock.png" class="w-full rounded-md" alt="Project 2">
+                <h3 class="mt-4 text-xl font-semibold">Stock Market Analysis</h3>
+                <p class="mt-2">This project focuses on analyzing stock market trends using Python and data analysis techniques. It involves collecting historical stock data, performing exploratory data analysis (EDA), and visualizing trends using libraries like Pandas, Matplotlib, and Seaborn.</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <img src="iamge/cricket.png" class="w-full rounded-md" alt="Project 3">
+                <h3 class="mt-4 text-xl font-semibold">T20 world cup Analysis</h3>
+                <p class="mt-2">This project provides an in-depth analysis of T20 World Cup data using Python. It involves data cleaning, visualization, and statistical insights to uncover trends in team performances, player statistics, and match outcomes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 text-center">
+        <h2 class="text-3xl font-bold">Contact Me</h2>
+        <form class="mt-6 max-w-lg mx-auto">
+            <input type="text" placeholder="Your Name" class="w-full p-2 mb-4 rounded-lg bg-gray-800">
+            <input type="email" placeholder="Your Email" class="w-full p-2 mb-4 rounded-lg bg-gray-800">
+            <textarea placeholder="Your Message" class="w-full p-2 mb-4 rounded-lg bg-gray-800"></textarea>
+            <button class="px-6 py-2 bg-yellow-500 text-gray-900 font-bold rounded-lg hover:bg-yellow-400">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-6 text-center bg-gray-800">
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
